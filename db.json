@@ -1,7 +1,24 @@
 {
-  "credentials":[
-  	{"id": 1, "username": "admin1", "password": "admin1"},
-  	{"id": 2, "username": "admin2", "password": "admin2"}
+  "credentials": [
+    {
+      "id": 1,
+      "username": "admin1",
+      "password": "admin1"
+    },
+    {
+      "id": 2,
+      "username": "admin2",
+      "password": "admin2"
+    },
+    {
+      "username": "admin3",
+      "password": "admin3",
+      "id": 3
+    },
+    {
+      "username": "vuong",
+      "password": "vuong",
+      "id": 4
+    }
   ]
 }
-

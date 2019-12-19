@@ -8,7 +8,7 @@ axios.get(creUrl).then(function(res){
 });
 var unsuccess = document.getElementById('unsuccess');
 var loginBtn = document.getElementById('loginBtn');
-var clearBtn = document.getElementById('clearBtn');
+var createBtn = document.getElementById('createBtn');
 var inputUser = document.getElementById('username');
 var inputPassword = document.getElementById('password');
 
@@ -21,17 +21,19 @@ function clearInput(){
 	inputPassword.value = '';
 }
 
-
 loginBtn.addEventListener('click', function(){
 	var result = credentials.find(function(item){
 		return item.username === inputUser.value && item.password === inputPassword.value;
-	});
+		});
 	if(result) loginSuccess();
-	else unsuccess.innerHTML = 'Username or Password is invalid! <br>';
+	else {
+		clearInput();
+		unsuccess.innerHTML = 'Username or Password is invalid! <br>';
+		}
+	});
+createBtn.addEventListener('click', function(){
+	window.location.replace('createAccount.html');
 });
-
-clearBtn.addEventListener('click', clearInput);
-
 }
 
 
