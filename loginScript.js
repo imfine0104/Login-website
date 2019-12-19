@@ -1,20 +1,11 @@
 window.onload= function () {
-/*var fs = require('fs');
-var filename = './db.json',
-var credentials = fs.readFileSync(filename,'utf8');*/
-var credentials = [
-  {
-    "id": 1,
-    "username": "admin1",
-    "password": "admin1"
-  },
-  {
-    "id": 2,
-    "username": "admin2",
-    "password": "admin2"
-  }
-];
-
+var credentials;
+var creUrl = 'http://localhost:3000/credentials';
+axios.get(creUrl).then(function(res){
+	if(res.data){
+		credentials = res.data;
+	}else credentials = [];
+});
 var unsuccess = document.getElementById('unsuccess');
 var loginBtn = document.getElementById('loginBtn');
 var clearBtn = document.getElementById('clearBtn');
