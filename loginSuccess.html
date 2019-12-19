@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login is Successful</title>
+</head>
+<body>
+	<style type="text/css">
+		#content{
+			text-align: center;
+			color: red;
+		}
+	</style>
+	<div id="content">
+		<h1 style="font-size: 3em; ">Congratulations</h1>
+	<button id="back-login">Back Login</button>
+	</div>	
+	<script type="text/javascript">
+		var backBtn = document.getElementById('back-login');
+		function backLogin(){
+			window.location.replace('index.html');
+		}
+		backBtn.addEventListener('click', backLogin);
+	</script>
+</body>
+</html>
