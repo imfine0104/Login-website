@@ -32,7 +32,7 @@ loginBtn.addEventListener('click', function(){
 		}
 	});
 createBtn.addEventListener('click', function(){
-	window.location.replace('createAccount.html');
+	window.location.assign('createAccount.html');
 });
 }
 
