@@ -28,7 +28,7 @@ createBtn.addEventListener('click',function(){
 	else if(pass1.value === pass2.value ){
 		newAccount(inputUser.value, pass2.value);
 		content.innerHTML = 
-		'<h1> Create Successful! </h1>';
+		'<h1 style="text-align: center; color: red;"> Created Successful! </h1>';
 	}
 	else {
 		unsuccess.innerHTML = 'Username or Password is invalid! <br>';
