@@ -3,19 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<title>Create Account</title>
-	
+	<style type="text/css">
+		.item {
+ 			margin: 12px;
+ 			padding: 6px;
+		}
+		#content {
+			position: absolute;
+			margin: 12px;
+		}
+	</style>
 </head>
-<body>
-	
+<body>	
 		<div id="content">
 		<h2>Create Account Form</h2>		
 		Username:<br>
-		<input type="text" name="username" id="username" ><br>
+		<input class="item" type="text" name="username" id="username" ><br>
 		Password:<br>
-		<input type="password" name="password" id="password1" ><br>
+		<input class="item" type="password" name="password" id="password1" ><br>
 		Password Confirm:<br>
-		<input type="password" name="password" id="password2" ><br>
-		<p2 id="unsuccess" style="color: red;"></p2>
+		<input class="item" type="password" name="password" id="password2" ><br>
+		<p2 class="item" id="unsuccess" style="color: red;"></p2>
 		<button id="createBtn">Create Account</button>	
 		</div>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>	
