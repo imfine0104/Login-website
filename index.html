@@ -6,6 +6,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<ul class="menu">
+		<li>Home</li>
+		<li class="has-submenu">About
+			<ul class="submenu">
+				<li>Company</li>
+				<li>Team</li>
+			</ul>
+		</li>
+		<li>Contact</li>
+	</ul>
 		<h2 style="color: Green; padding: 0 0 0 16px;font-size: 30px;">Login Form</h2>
 		<div id="content">		
 		Username:<br>
@@ -13,8 +23,8 @@
 		Password:<br>
 		<input class="item" type="password" name="password" id="password" ><br>
 		<p2 class="item" id="unsuccess" style="color: red;"></p2>
-		<button id="loginBtn">Login</button>
-		<button id="createBtn">Create</button>	
+		<button class="btn" id="loginBtn">Login</button>
+		<button class="btn" id="createBtn">Create</button>	
 		</div>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>	
 	<script type="text/javascript" src="index.js"></script>

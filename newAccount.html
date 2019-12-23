@@ -12,6 +12,9 @@
 			position: absolute;
 			margin: 12px;
 		}
+		.btn:hover {
+			color: green;
+		}
 	</style>
 </head>
 <body>	
@@ -24,7 +27,7 @@
 		Password Confirm:<br>
 		<input class="item" type="password" name="password" id="password2" ><br>
 		<p2 class="item" id="unsuccess" style="color: red;"></p2>
-		<button id="createBtn">Create Account</button>	
+		<button class="btn" id="createBtn">Create Account</button>	
 		</div>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>	
 	<script type="text/javascript" src="newCredential.js"></script>
