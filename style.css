@@ -1,5 +1,5 @@
  body {
-	position: absolute;
+	/*position: absolute;*/
 	margin: 12px;
  }
 	
@@ -23,7 +23,7 @@
  }
 
  .menu li:hover {
- 	background-color: #EEE;
+ 	background-color: #2a27bd;
  	color: white;
  }
 
@@ -38,4 +38,9 @@
 
  .has-submenu:hover .submenu {
  	display: block;
+ }
+
+ button:hover {
+ 	transform: scale(1.2);	
+ 	margin: 4px;
  }
